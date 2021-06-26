@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 110 110">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #875d51;
+      }
+
+      .cls-2 {
+        fill: #9f6d5c;
+      }
+
+      .cls-3 {
+        fill: #755bd3;
+      }
+
+      .cls-4 {
+        fill: #8861f2;
+      }
+    </style>
+  </defs>
+  <g id="chocolate">
+    <g id="chocolate-2" data-name="chocolate">
+      <rect class="cls-1" x="26.48" width="52.49" height="89.35" rx="6.07"/>
+      <rect class="cls-2" x="30.48" width="52.49" height="89.35" rx="6.07"/>
+      <path class="cls-3" d="M25.91,59.52H75.34A4.63,4.63,0,0,1,80,64.15v41.22A4.63,4.63,0,0,1,75.34,110H30.55a4.63,4.63,0,0,1-4.63-4.63V59.52A0,0,0,0,1,25.91,59.52Z"/>
+      <path class="cls-4" d="M30.41,59.52H84.09a0,0,0,0,1,0,0v45.85A4.63,4.63,0,0,1,79.45,110H34.66A4.63,4.63,0,0,1,30,105.37V59.9A.38.38,0,0,1,30.41,59.52Z"/>
+      <g>
+        <rect class="cls-1" x="33.9" y="3.4" width="13.93" height="14.87" rx="5.29"/>
+        <rect class="cls-1" x="50.06" y="3.4" width="13.93" height="14.87" rx="5.29"/>
+        <rect class="cls-1" x="66.23" y="3.4" width="13.93" height="14.87" rx="5.29"/>
+        <rect class="cls-1" x="33.9" y="39.32" width="13.93" height="14.87" rx="5.29"/>
+        <rect class="cls-1" x="50.06" y="39.32" width="13.93" height="14.87" rx="5.29"/>
+        <rect class="cls-1" x="66.23" y="39.32" width="13.93" height="14.87" rx="5.29"/>
+        <rect class="cls-1" x="33.9" y="21.36" width="13.93" height="14.87" rx="5.29"/>
+        <rect class="cls-1" x="50.06" y="21.36" width="13.93" height="14.87" rx="5.29"/>
+        <rect class="cls-1" x="66.23" y="21.36" width="13.93" height="14.87" rx="5.29"/>
+      </g>
+    </g>
+  </g>
+</svg>

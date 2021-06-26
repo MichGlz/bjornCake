@@ -1,0 +1,203 @@
+
+#title_screen{
+    position: absolute;
+    background-color: black;
+    height: 36vw;
+    width: 64vw;
+    border-radius: 2vw;
+ }
+
+#title_background{
+    position: absolute;
+    background-image: url(../assets/wellcome-page.svg);
+    background-size: cover;
+    height: 36vw;
+    width: 64vw;
+    border-radius: 2vw;
+ }
+
+#chef_bear{
+    position: absolute;
+    height: 21vw;
+    width: 14vw;
+    right: -12vw;
+    bottom: 2vw;
+}
+
+.walk{
+    animation-name: walk;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes walk{
+    from{
+        transform: translateX(0vw);
+    }
+    to{
+        transform: translateX(-17vw);
+    }
+    
+}
+
+#chef_bearsprite{
+    position: absolute;
+    background-image: url(../assets/chef_bear.svg);
+    background-size: cover;
+    height: 21vw;
+    width: 14vw;
+}
+.steps{
+    animation-name: steps;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    
+}
+
+
+@keyframes steps{
+    0%,100%{
+        transform: rotate(2deg);
+    }
+    50%{
+        transform: rotate(-2deg);
+    }
+    
+}
+
+
+#logo{
+    position: absolute;
+    background-image: url(../assets/logo_star.svg);
+    background-size: cover;
+    height: 15vw;
+    width: 25.8vw;  
+    top: 5vw;
+    left: 16vw;
+}
+
+#play_bee{
+    position: absolute;
+/*    background-color: aqua;*/
+    height: 8vw;
+    width: 6vw;  
+    top: 8vw;
+    left: -4vw;
+    pointer-events: none;
+}
+
+.fly3{
+    animation-name: fly3;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fly3{
+    from{
+        transform: translate(0, 0);
+    }
+    to{
+        transform: translate(30vw, 9vw);
+    }
+    
+}
+
+.fly4{
+    animation-name: fly4;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+/*    animation-delay: 1s;*/
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fly4{
+    from{
+        transform: translate(30vw, 9vw);
+    }
+    to{
+        transform: translate(62vw, -7vw);
+    }
+    
+}
+
+    
+
+
+#title_play{
+    position: absolute;
+/*    background-color: aqua;*/
+    height: 8vw;
+    width: 6vw;  
+    top: 17vw;
+    left: 26vw;
+}
+
+#sprite_play{
+    position: absolute;
+    background-image: url(../assets/buttom-play-small.svg);
+    background-size: cover;
+    height: 4vw;
+    width: 4vw;
+    bottom: 0;
+    left: 2vw;
+ }
+
+#tbuttom_play{
+    position: absolute;
+    background-image: url(../assets/buttom-play-small.svg);
+    background-size: cover;
+    height: 4vw;
+    width: 4vw;
+    bottom: 0;
+    left: 2vw;
+ }
+
+#sprite_beeglases{
+    position: absolute;
+    background-image: url(../assets/bee_glases.svg);
+    background-size: cover;
+    height: 5vw;
+    width: 5vw;
+    top: 0;
+ }
+
+#buttom_square{
+  position: absolute;
+
+    height: 4vw;
+    width: 17vw;  
+    top: 26vw;
+    left: 21.5vw;  
+}
+
+.instructions{
+    background-image: url(../assets/buttom_instructions.svg);
+    background-size: cover;
+}
+
+.loadgame{
+    background-image: url(../assets/load_game.svg);
+    background-size: cover;
+}
+
+
+
+#title_front{
+    position: absolute;
+    background-image: url(../assets/front_tittle.svg);
+    background-size: cover;
+    height: 36vw;
+    width: 64vw;
+    pointer-events: none;
+}
+

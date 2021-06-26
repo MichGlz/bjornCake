@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="419" height="494.79" viewBox="0 0 419 494.79">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #96675a;
+      }
+
+      .cls-2 {
+        fill: #cbbdad;
+      }
+
+      .cls-3 {
+        fill: #9f6d5c;
+      }
+
+      .cls-4 {
+        fill: #875d51;
+      }
+
+      .cls-5 {
+        fill: #aaa199;
+      }
+
+      .cls-6 {
+        fill: #3a3e47;
+      }
+
+      .cls-7 {
+        fill: #fcfcfc;
+      }
+
+      .cls-8 {
+        fill: #563a34;
+      }
+    </style>
+  </defs>
+  <g id=":O">
+    <g id="oso-2" data-name="oso">
+      <g id="cabeza">
+        <g>
+          <circle class="cls-1" cx="124.84" cy="41.57" r="41.57"/>
+          <circle class="cls-2" cx="117.2" cy="39.02" r="24.18"/>
+        </g>
+        <g>
+          <circle class="cls-3" cx="266.83" cy="47.19" r="44.43"/>
+          <circle class="cls-2" cx="260.04" cy="42.95" r="25.84"/>
+        </g>
+        <circle class="cls-4" cx="185.28" cy="132.13" r="98.83"/>
+        <circle class="cls-3" cx="186.98" cy="125.34" r="98.83"/>
+        <g id="ocico">
+          <ellipse class="cls-2" cx="128.47" cy="147.57" rx="52.96" ry="47.92" transform="translate(-36.36 252.99) rotate(-81.56)"/>
+          <ellipse class="cls-5" cx="169.15" cy="150.71" rx="58.97" ry="55.65"/>
+        </g>
+      </g>
+      <g id="ojos">
+        <g>
+          <circle id="ojo_derecho" data-name="ojo derecho" class="cls-6" cx="203.49" cy="83.49" r="15.84"/>
+          <circle class="cls-7" cx="206.7" cy="73.81" r="4.22"/>
+        </g>
+        <g>
+          <circle id="ojo_izquierdo" data-name="ojo izquierdo" class="cls-6" cx="128.2" cy="76" r="13.35"/>
+          <circle class="cls-7" cx="131.28" cy="67.9" r="3.31"/>
+        </g>
+      </g>
+      <g id=":O-2" data-name=":O">
+        <circle id="voca_:O" data-name="voca :O" class="cls-6" cx="135.32" cy="178.73" r="19.08"/>
+        <g id="cejas_:_" data-name="cejas :)">
+          <path class="cls-8" d="M214.39,42.82c6.87,1,12.54,3.81,15,7.06a5.48,5.48,0,0,0,2.35-3.54c.69-4.75-6.58-9.73-16.23-11.13s-18,1.32-18.72,6.07A5.48,5.48,0,0,0,198,45.34C201.29,42.91,207.52,41.82,214.39,42.82Z"/>
+          <path class="cls-8" d="M131.85,41.33c5.6-.06,10.46,1.49,12.81,3.78A4.42,4.42,0,0,0,146.1,42c0-3.86-6.45-6.94-14.31-6.86s-14.21,3.28-14.17,7.15a4.4,4.4,0,0,0,1.5,3.09C121.42,43,126.25,41.39,131.85,41.33Z"/>
+        </g>
+      </g>
+      <path id="nariz_v2" class="cls-6" d="M156.29,105.47c.35-6.86-4.47-12.68-10.75-13a10.81,10.81,0,0,0-7.22,2.35A10.82,10.82,0,0,0,131,91.41c-6.28-.31-11.66,5-12,11.85a12.92,12.92,0,0,0,3.53,9.67A3,3,0,0,0,123,114l8.52,12.81c1.92,2.87,7.78,3.17,10,.5l9.76-11.89a3,3,0,0,0,.36-.54A12.88,12.88,0,0,0,156.29,105.47Z"/>
+    </g>
+  </g>
+</svg>

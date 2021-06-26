@@ -1,0 +1,430 @@
+#instructions_screen {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 64vw;
+    height: 36vw;
+    background-size: cover;
+
+}
+
+#instructions {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 36vw;
+    background-color: whitesmoke;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+#good_ingredients {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+
+    grid-template-areas:
+        "s1";
+    grid-template-rows: 98vw;
+
+}
+
+
+#section1 {
+    position: relative;
+    width: 100%; 
+    grid-area: s1;
+    display: grid;
+    grid-template-areas:
+        "li hi ."
+        "li p1 ."
+        "li gi ."
+        ". . ."
+        "bi p2 ."
+        ". . ."
+        ". p3 . "
+        ". wi . "
+        "p5 p4 ."
+        ". bp .";
+    grid-template-columns: 14vw auto 2.5vw;
+    grid-column-gap: 3vw;
+    grid-template-rows: 6vw 20vw 10vw 6vw 7vw 2vw 9vw 13vw 9vw 8vw;
+}
+
+#section1 p {
+    font-family: roboto;
+    font-size: 2vw;
+    max-width: 37ch;
+}
+
+#hi {
+    grid-area: hi;
+/*    transform: scale(.4);*/
+    padding-top: 0;
+    margin-top: 2vw;
+    margin-left: 10vw;
+    max-width: 20vw;
+    
+}
+
+#p1 {
+    grid-area: p1;
+    margin-top: 3.5vw;
+    margin-left: 1vw;
+}
+
+#p2 {
+    grid-area: p2;
+    margin-top: 1vw;
+}
+
+#p3 {
+    grid-area: p3;
+}
+
+#p4 {
+    grid-area: p4;
+}
+
+#p5 {
+    grid-area: p5;
+    padding: 1vw;
+    width: 8vw;
+    height: 7vw;
+    margin-left: 5vw;
+    margin-top: 3.5vw;
+    background-color: lightblue;
+    border-radius: 2vw;
+}
+
+#p5 p {
+    font-family: "cabin sketch";
+    font-size: 5vw;
+    text-align: center;
+    margin: 0;
+    margin-top: 0;
+    margin-left: 0;
+    color: ivory;
+    text-shadow: 2px 2px 5px red;
+
+}
+
+
+#section2 {
+    grid-area: s2;
+    position: relative;
+    background-color: violet;
+    width: 100%;
+
+}
+
+
+#lista {
+    grid-area: li;
+    background-image: url(../assets/front-ground.svg);
+    background-size: cover;
+    height: 36vw;
+    width: 14vw;
+    pointer-events: none;
+
+}
+
+
+#texto02 {
+    background-color: blue;
+}
+
+
+#inst_but_play {
+
+    grid-area: bp;
+    width: 5vw;
+    height: 5vw;
+    background-image: url(../assets/buttom-play-small.svg);
+    background-size: cover;
+    margin-top: 8vw;
+    margin-left: 13vw
+}
+
+#inst_but_home {
+
+    width: 3vw;
+    height: 3vw;
+    background-image: url(../assets/buttom-home.svg);
+    background-size: cover;
+}
+
+#close_buttom {
+    position: absolute;
+    top: 1vw;
+    right: 2vw;
+    width: 2vw;
+    height: 2vw;
+    background-image: url(../assets/buttom-close.svg);
+    background-size: cover;
+    
+}
+
+
+
+#icounter {
+    position: absolute;
+    height: auto;
+    width: 2.5vw;
+    left: 9.35vw;
+    top: 12.8vw;
+}
+
+#icounter p {
+    font-family: "cabin sketch";
+    font-size: 2.2em;
+    font-size: 1.7vw;
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 1.2vw;
+
+}
+
+#ixflour {
+    position: absolute;
+    left: .8vw;
+    top: 13.5vw;
+}
+
+#ixsugar {
+    position: absolute;
+    left: .8vw;
+    top: 16.5vw;
+}
+
+#ixmilk {
+    position: absolute;
+    left: .8vw;
+    top: 19.7vw;
+}
+
+#ixbutter {
+    position: absolute;
+    left: .8vw;
+    top: 22.9vw;
+}
+
+#ixegg {
+    position: absolute;
+    left: .8vw;
+    top: 26.1vw;
+}
+
+#ixapple {
+    position: absolute;
+    left: .8vw;
+    top: 29.3vw;
+}
+
+.sprite2 {
+    background-size: cover;
+    height: 3vw;
+    width: 3vw;
+
+}
+
+
+
+
+#container_ingrediente {
+
+    grid-area: gi;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1vw;
+    margin-left: 6vw;
+    width: 28vw;
+    height: 8vw;
+    background-color: darkslategray;
+    border-radius: 2vw;
+
+}
+
+#container_ingrediente h2 {
+    font-family: "cabin sketch";
+    font-size: 2.5vw;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 1vw;
+    flex-basis: 100%;
+    align-self: center;
+    color: aliceblue;
+}
+
+#wrong_ingredients {
+    grid-area: wi;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1vw;
+    width: 28vw;
+    height: 8vw;
+    margin-left: 5vw;
+    background-color: darkslategray;
+    border-radius: 2vw;
+
+}
+
+#wrong_ingredients h2 {
+    font-family: "cabin sketch";
+    font-size: 2.5vw;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 1vw;
+    flex-basis: 100%;
+    align-self: center;
+    color: aliceblue;
+
+}
+
+#bee_i {
+    height: 3.5vw;
+    width: 3.5vw;
+    background-image: url(../assets/bee.svg);
+    background-size: cover;
+}
+
+
+#bee_ci {
+    grid-area: bi;
+    display: flex;
+    padding: 1vw;
+    background-color: darkslategray;
+    border-radius: 2vw;
+    width: 10vw;
+    margin-left: 4vw;
+    justify-content: space-around;
+}
+
+#bee_ci h2 {
+    font-family: "cabin sketch";
+    font-size: 2.5vw;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 1vw;
+    flex-basis: 50%;
+    align-self: center;
+    color: aliceblue;
+
+}
+
+
+#i_good1 {
+    font-family: 'Cabin Sketch', cursive;
+    text-align: center;
+    margin: 0;
+    font-size: 0;
+}
+
+#i_good4 {
+    font-family: 'Cabin Sketch', cursive;
+    text-align: center;
+    margin: 0;
+    font-size: 0;
+}
+
+.falling3:hover {
+    animation-name: fall;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+.fontpulse2:hover {
+    animation-name: fontpulse;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    transform-origin: left;
+    animation-play-state: running;
+}
+
+.scale_i:hover {
+
+
+
+    animation-name: scale_i;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scale_i {
+    0% {
+        transform: scale(1) translateX(0);
+        font-size: 0;
+
+    }
+
+
+    60% {
+        transform: scale(2.5) rotate(45deg) translateX(0);
+        font-size: 3.5vw;
+    }
+
+    100% {
+        transform: translateX(-38vw);
+        font-size: 3.5vw;
+    }
+}
+
+.scale2_i:hover {
+
+    animation-name: scale2_i;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scale2_i {
+    0% {
+        transform: scale(1) translateX(0);
+        font-size: 0;
+    }
+
+
+    60% {
+        transform: scale(5.5) rotate(-45deg) translateX(0);
+        font-size: 3vw;
+    }
+
+    100% {
+        transform: translateX(-48vw);
+        font-size: 3vw;
+    }
+}
+
+.turn2:hover {
+    animation-name: turn2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+
+@keyframes turn2 {
+    0% {
+        transform: scale(1);
+
+    }
+
+
+    80% {
+        transform: scale(2) rotate(720deg);
+    }
+}

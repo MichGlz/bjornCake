@@ -1,0 +1,896 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas:
+        "hd"
+        "ma"
+        "fo";
+    grid-template-rows: 10vw 1fr 10vw;
+    background: linear-gradient(90deg, #71d8c8 5%, #ed9140 25%, #ede340 35%, #fcfcfc 45%);
+    background-repeat: no-repeat;
+
+}
+
+.scale007{
+    transform: scale(1.25);
+}
+
+header {
+    grid-area: hd;
+    display: grid;
+    grid-template-areas:
+        "fig ."
+        "fig nav";
+    grid-template-columns: 1fr 5fr;
+    grid-auto-rows: 2fr 1fr;
+    font-family: roboto;
+    font-size: 2vw;
+    color: black;
+    background-color: rgba(255, 255, 255, .4);
+
+}
+
+
+header figure {
+    grid-area: fig;
+    margin: 1vw 2vw;
+
+}
+
+header img {
+    max-width: 100%;
+
+}
+
+
+header nav {
+    grid-area: nav;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+
+    display: flex;
+    list-style: none;
+    margin: 0;
+    align-items: flex-end;
+}
+
+nav li {
+    margin-right: 2vw;
+}
+
+nav a:hover {
+    color: cornflowerblue;
+}
+
+
+main {
+    grid-area: ma;
+    display: grid;
+    grid-template-areas:
+        "as sc .";
+    grid-template-columns: auto 64vw 2vw;
+}
+
+aside {
+    grid-area: as;
+    display: block;
+    background: rgba(255, 255, 255, .4);
+    margin: 2vw;
+    border-radius: 2vw;
+}
+
+aside h1 {
+    font-family: roboto;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+aside h2 {
+    font-family: roboto;
+    font-weight: 700;
+    font-size: 1.8vw;
+    margin-left: 0vw;
+    text-align: center;
+
+}
+
+aside p {
+    font-family: roboto;
+    font-size: 1.2vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+footer {
+    grid-area: fo;
+    background-color: rgba(255, 255, 255, .4);
+}
+
+
+#sprites {
+}
+
+#bee_1_container {
+    position: absolute;
+    height: 4vw;
+    width: 4vw;
+}
+
+#bee_1_sprite {
+    position: absolute;
+    height: 4vw;
+    width: 4vw;
+    background-image: url(../assets/bee.svg);
+    background-size: cover;
+}
+
+#bee_2_container {
+    position: absolute;
+    height: 4vw;
+    width: 4vw;
+}
+
+#bee_2_sprite {
+    position: absolute;
+    height: 4vw;
+    width: 4vw;
+    background-image: url(../assets/bee.svg);
+    background-size: cover;
+}
+
+#bee_3_container {
+    position: absolute;
+    height: 4vw;
+    width: 4vw;
+}
+
+#bee_3_sprite {
+    position: absolute;
+    height: 4vw;
+    width: 4vw;
+    background-image: url(../assets/bee.svg);
+    background-size: cover;
+}
+
+#bee_4_container {
+    position: absolute;
+    height: 4vw;
+    width: 4vw;
+}
+
+#bee_4_sprite {
+    position: absolute;
+    height: 4vw;
+    width: 4vw;
+    background-image: url(../assets/bee.svg);
+    background-size: cover;
+}
+
+#bee_5_container {
+    position: absolute;
+    height: 4vw;
+    width: 4vw;
+    
+}
+
+#bee_5_sprite {
+    position: absolute;
+    height: 4vw;
+    width: 4vw;
+    background-image: url(../assets/bee.svg);
+    background-size: cover;
+}
+
+
+
+
+#screen {
+    grid-area: sc;
+    position: relative;
+    overflow: hidden;
+    height: 36vw;
+    width: 64vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    border-radius: 2vw;
+    
+}
+
+#alarm{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    opacity: 0;
+    pointer-events: none;
+    
+    }
+
+.alarma{
+    animation-name: alarma;
+    animation-duration: .5s;
+    animation-iteration-count:1;
+    animation-timing-function: linear;
+}
+
+@keyframes alarma{
+    0%,40%,80%{opacity: 0;}
+    20%,60%,100%{opacity:40%;}
+    
+}
+
+
+
+
+#cover2{
+    position: absolute;
+    height: 36vw;
+    width: 64vw;
+    background-color: black;
+    pointer-events: none;
+}
+
+#sunmoon {
+    position: absolute;
+    background-image: url(../assets/day-night-background.svg);
+    background-size: cover;
+    height: 72.2vw;
+    width: 64vw;
+    bottom: 0;
+}
+
+
+#forest {
+    position: absolute;
+    
+    height: 36vw;
+    width: 64vw;
+}
+
+#midground {
+    position: absolute;
+    background-image: url(../assets/mid-ground.svg);
+    background-size: cover;
+    height: 36vw;
+    width: 64vw;
+}
+
+#cover {
+    position: absolute;
+    background-color: black;
+    opacity: 80%;
+    background-size: cover;
+    height: 36vw;
+    width: 64vw;
+    pointer-events: none;
+}
+
+
+#sadbear {
+    position: absolute;
+    background-image: url(../assets/sad_face.svg);
+    background-size: cover;
+    height: 16.49vw;
+    width: 13.96vw;
+    bottom: 0;
+    right: 0;
+
+}
+
+#wowbear {
+    position: absolute;
+    background-image: url(../assets/oh_face.svg);
+    background-size: cover;
+    height: 16.49vw;
+    width: 13.96vw;
+    bottom: 0;
+    right: 0;
+
+}
+.sprite {
+    position: absolute;
+    background-size: cover;
+    height: 4vw;
+    width: 4vw;
+    
+}
+
+.flour {
+    background-image: url(../assets/flour.svg);
+    background-size: cover;
+    filter: drop-shadow(0vw .2vw .1vw darkblue);
+   }
+
+.sugar {
+   
+    background-image: url(../assets/sugar.svg);
+    background-size: cover;
+    filter: drop-shadow(0vw .2vw .1vw darkblue);
+}
+
+.egg {
+    
+    background-image: url(../assets/egg.svg);
+    background-size: cover;
+    filter: drop-shadow(0vw .2vw .1vw darkblue);
+}
+
+.apple {
+   
+    background-image: url(../assets/apple.svg);
+    background-size: cover;
+    filter: drop-shadow(0vw .2vw .1vw darkblue);
+}
+
+.butter {
+   
+    background-image: url(../assets/butter.svg);
+    background-size: cover;
+    filter: drop-shadow(0vw .2vw .1vw darkblue);
+}
+
+.milk {
+   
+    background-image: url(../assets/milk.svg);
+    background-size: cover;
+    filter: drop-shadow(0vw .2vw .1vw darkblue);
+  
+}
+
+.bacon {
+    background-image: url(../assets/bacon.svg);
+    background-size: cover;
+   }
+
+.chocolate {
+    background-image: url(../assets/chocolate.svg);
+    background-size: cover;
+   }
+
+.carrot {
+    background-image: url(../assets/carrot.svg);
+    background-size: cover;
+   }
+
+.pear {
+    background-image: url(../assets/pear.svg);
+    background-size: cover;
+   }
+
+.salt {
+    
+    background-image: url(../assets/salt.svg);
+    background-size: cover;
+}
+
+/*
+.bad_ing1 {
+    background-image: url(../assets/bacon.svg);
+    background-size: cover;
+   }
+
+.bad_ing2 {
+    background-image: url(../assets/chocolate.svg);
+    background-size: cover;
+   }
+
+.bad_ing3 {
+    background-image: url(../assets/carrot.svg);
+    background-size: cover;
+   }
+
+.bad_ing4 {
+    background-image: url(../assets/pear.svg);
+    background-size: cover;
+   }
+
+.bad_ing5 {
+    
+    background-image: url(../assets/salt.svg);
+    background-size: cover;
+}
+*/
+
+#container1{
+position: absolute;
+height: 4vw;
+width: 4vw;
+}
+
+#sprite1{
+position: absolute;
+height: 4vw;
+width: 4vw;
+}
+
+#container2{
+position: absolute;
+height: 4vw;
+width: 4vw;
+}
+
+#sprite2{
+position: absolute;
+height: 4vw;
+width: 4vw;
+}
+
+#container3{
+position: absolute;
+height: 4vw;
+width: 4vw;
+}
+
+#sprite3{
+position: absolute;
+height: 4vw;
+width: 4vw;
+}
+
+#container4{
+position: absolute;
+height: 4vw;
+width: 4vw;
+}
+
+#sprite4{
+position: absolute;
+height: 4vw;
+width: 4vw;
+}
+
+#container5{
+position: absolute;
+height: 4vw;
+width: 4vw;
+}
+
+#sprite5{
+position: absolute;
+height: 4vw;
+width: 4vw;
+}
+
+#container6{
+position: absolute;
+height: 4vw;
+width: 4vw;
+}
+
+#sprite6{
+position: absolute;
+height: 4vw;
+width: 4vw;
+}
+
+
+
+#container7{
+position: absolute;
+height: 4vw;
+width: 4vw;
+}
+
+#sprite7{
+position: absolute;
+height: 4vw;
+width: 4vw;
+}
+
+#container8{
+position: absolute;
+height: 4vw;
+width: 4vw;
+}
+
+#sprite8{
+position: absolute;
+height: 4vw;
+width: 4vw;
+}
+
+#container9{
+position: absolute;
+height: 4vw;
+width: 4vw;
+}
+
+#sprite9{
+position: absolute;
+height: 4vw;
+width: 4vw;
+}
+
+#container10{
+position: absolute;
+height: 4vw;
+width: 4vw;
+}
+
+#sprite10{
+position: absolute;
+height: 4vw;
+width: 4vw;
+}
+
+#container11{
+position: absolute;
+height: 4vw;
+width: 4vw;
+}
+
+#sprite11{
+position: absolute;
+height: 4vw;
+width: 4vw;
+}
+
+
+
+#frontground {
+    position: absolute;
+    background-image: url(../assets/front-ground.svg);
+    background-size: cover;
+    height: 36vw;
+    width: 14vw;
+    pointer-events: none;
+
+}
+
+#frontground2 {
+    position: absolute;
+    background-image: url(../assets/front-ground.svg);
+    background-size: cover;
+    background-position: right;
+    height: 36vw;
+    width: 8vw;
+    right: 0;
+    pointer-events: none;
+
+}
+
+#ui {
+    position: absolute;
+    height: 36vw;
+    width: 14vw;
+
+}
+
+#ui2 {
+    position: absolute;
+    height: 5vw;
+    width: 16vw;
+    right: 0;
+    top:0;
+    pointer-events: none;
+}
+
+#ui2 p{
+    position: absolute;
+    font-family: "cabin sketch";
+    margin: 0;
+    font-size: 4vw;
+    height: auto;
+    width: auto;
+    right: 42vw;
+    top:1vw;
+    color: ivory;
+    text-shadow:2px 2px 5px red; 
+    text-align: right;
+}
+
+.fontpulse{
+    animation-name: fontpulse;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+}
+
+@keyframes fontpulse {
+    0%,100%{
+       font-size: 4vw;
+    }
+    
+    50%{
+      font-size: 6vw; 
+        color: black;
+    }
+}
+
+
+#sound {
+    position: absolute;
+    
+    height: 4vw;
+    width: 4vw;
+    right: 1vw;
+    top: 1vw;
+    pointer-events:auto;
+}
+
+#sound2 {
+    position: absolute;
+    
+    height: 4vw;
+    width: 4vw;
+    right: 1vw;
+    top: 1vw;
+    pointer-events:auto;
+}
+
+.mute
+{background-image: url(../assets/buttom-sound.svg);
+    background-size: cover;}
+
+.unmute
+{background-image: url(../assets/buttom-mute.svg);
+    background-size: cover;}
+
+
+#pause {
+    position: absolute;
+    
+    height: 4vw;
+    width: 4vw;
+    right: 6vw;
+    top: 1vw;
+}
+
+.button_pause{
+   background-image: url(../assets/buttom-pause.svg);
+   background-size: cover; 
+    pointer-events:auto;
+}
+
+.button_play{
+    background-image: url(../assets/buttom-play-small.svg);
+    background-size: cover;
+    pointer-events:auto;
+}
+
+#ui_but_home{
+    position: absolute;
+    top: 1vw;
+    right: 12vw;
+    width: 4vw;
+    height: 4vw;
+    background-image: url(../assets/buttom-home.svg);
+    background-size: cover;
+    pointer-events:auto;
+}
+
+.button_home{
+    background-image: url(../assets/buttom-home.svg);
+    background-size: cover;
+    pointer-events:auto;
+}
+
+
+.live {
+    position: absolute;
+    background-image: url(../assets/live-bee.svg);
+    background-size: cover;
+    height: 2vw;
+    width: 2vw;
+}
+
+.lostlive {
+    position: absolute;
+    background-image: url(../assets/lost-live-bee.svg);
+    background-size: cover;
+    height: 2vw;
+    width: 2vw;
+}
+
+.po1 {
+    left: 3vw;
+    top: 5vw;
+}
+
+.po2 {
+    left: 6vw;
+    top: 6vw;
+}
+
+.po3 {
+    left: 9vw;
+    top: 5vw;
+}
+
+#counter {
+    position: absolute;
+    height: auto;
+    width: 2.5vw;
+    font-family: "cabin sketch";
+    /*font-size: 2.2em;*/
+    font-size: 1.7vw;
+    left: 9.35vw;
+    top: 12.8vw;
+    }
+
+#counter p {
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 1.2vw;
+    
+}
+
+#sprites{
+   text-align: center;
+    font-family: "cabin sketch";
+    font-size: 3vw; 
+    
+}
+
+
+#game_over{
+    position: absolute;
+    height: 27.3vw;
+    width: 48vw;
+/*    background-color: darkturquoise;*/
+    top:6vw;
+    left: 15vw;
+}
+
+#bybee{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/game-over-lives.svg);
+    background-size: cover;
+    overflow: hidden;
+    }
+
+#deadbeeRP{
+    position: absolute;
+    background-image: url(../assets/dead-bee.svg);
+    background-size: cover;
+    height:24vw;
+    width: 22vw;
+    left: 2vw;
+    top: -25vw;
+    
+}
+
+#time_over{
+    position: absolute;
+    height: 27.3vw;
+    width: 48vw;
+/*    background-color: darkturquoise;*/
+    top:6vw;
+    left: 15vw;
+}
+
+#bytime{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/time-over.svg);
+    background-size: cover;
+    
+    }
+
+#level_complete{
+    position: absolute;
+    height: 27.3vw;
+    width: 48vw;
+/*    background-color: darkturquoise;*/
+    top:6vw;
+    left: 15vw;
+    
+}
+
+#l_complete{
+  position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/level-complete.svg);
+    background-size: cover;  
+}
+
+#toreplay{
+    position: absolute;
+    top: 15vw;
+    left: 12vw;
+    height: 4vw;
+    width: 4vw;
+}
+
+#goreplay{
+    position: absolute;
+    height: 4vw;
+    width: 4vw;
+    top: 9vw;
+    left: 9vw;
+}
+
+#lcreplay{
+    position: absolute;
+    top: 16vw;
+    left: 14vw;
+    height: 4vw;
+    width: 4vw;
+}
+
+
+
+.replay{
+    position: absolute;
+    background-image: url(../assets/button-replay.svg);
+    background-size: cover;
+    filter: drop-shadow(.1vw .2vw .1vw black);
+    height: 4vw;
+    width: 4vw;
+    
+}
+
+#xflour{
+    position: absolute;
+    left: .8vw;
+    top:13.5vw;
+}
+
+#xsugar{
+    position: absolute;
+    left: .8vw;
+    top:16.5vw;
+}
+
+#xmilk{
+    position: absolute;
+    left: .8vw;
+    top:19.7vw;
+}
+
+#xbutter{
+    position: absolute;
+    left: .8vw;
+    top:22.9vw;
+}
+
+#xegg{
+    position: absolute;
+    left: .8vw;
+    top:26.1vw;
+}
+
+#xapple{
+    position: absolute;
+    left: .8vw;
+    top:29.3vw;
+}
+
+
+
+
+.tache{
+    position: absolute;
+    background-image: url(../assets/tache.svg);
+    background-size: cover;
+    filter: drop-shadow(.1vw .1vw .1vw black);
+    height: 3.5vw;
+    width: 3.5vw;
+    
+}
+
+.line{
+     position: absolute;
+    background-image: url(../assets/crossline.svg);
+    background-size: cover;
+    filter: drop-shadow(0vw .1vw .1vw grey);
+    height: .8vw;
+    width: 12.2vw;
+}
+
+
+

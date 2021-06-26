@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bjornscake</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/tittle_screen.css" />
+    <link rel="stylesheet" href="css/instructions_page.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Henny+Penny&family=Roboto:wght@400;500;700&family=Sedgwick+Ave+Display&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <header id="header">
+      <figure><img src="assets/logo.svg" alt="logo" /></figure>
+      <nav>
+        <ul>
+          <li>
+            <a href="https://youtu.be/aBCUyguLwt4" target="_blank"
+              >paper<br />prototype</a
+            >
+          </li>
+          <li>
+            <a href="assets/activity_diagram.pdf" target="_blank"
+              >activity<br />diagram</a
+            >
+          </li>
+          <li><a href="assets.html" target="_blank">assets</a></li>
+          <li>
+            <a href="assets/machine_diagram.pdf" target="_blank">
+              state<br />machine<br />diagram</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="screen">
+        <div id="game">
+          <div id="game_background">
+            <div id="sunmoon"></div>
+            <div id="forest">
+              <div id="midground"></div>
+              <div id="sadbear" class="hide"></div>
+              <div id="wowbear" class="hide"></div>
+            </div>
+          </div>
+
+          <div id="sprites">
+            <div id="container1">
+              <div id="sprite1"></div>
+            </div>
+            <div id="container2">
+              <div id="sprite2"></div>
+            </div>
+            <div id="container3">
+              <div id="sprite3"></div>
+            </div>
+            <div id="container4">
+              <div id="sprite4"></div>
+            </div>
+            <div id="container5">
+              <div id="sprite5"></div>
+            </div>
+            <div id="container6">
+              <div id="sprite6"></div>
+            </div>
+
+            <div id="container7">
+              <div id="sprite7"></div>
+            </div>
+            <div id="container8">
+              <div id="sprite8"></div>
+            </div>
+            <div id="container9">
+              <div id="sprite9"></div>
+            </div>
+            <div id="container10">
+              <div id="sprite10"></div>
+            </div>
+            <div id="container11">
+              <div id="sprite11"></div>
+            </div>
+
+            <div id="bee_1_container">
+              <div id="bee_1_sprite"></div>
+            </div>
+            <div id="bee_2_container">
+              <div id="bee_2_sprite"></div>
+            </div>
+            <div id="bee_3_container">
+              <div id="bee_3_sprite"></div>
+            </div>
+            <div id="bee_4_container">
+              <div id="bee_4_sprite"></div>
+            </div>
+            <div id="bee_5_container">
+              <div id="bee_5_sprite"></div>
+            </div>
+          </div>
+          <div id="cover"></div>
+          <div id="alarm"></div>
+
+          <div id="frontground">
+            <div id="counter">
+              <p id="cflour">0</p>
+              <p id="csugar">0</p>
+              <p id="cmilk">0</p>
+              <p id="cbutter">0</p>
+              <p id="cegg">0</p>
+              <p id="capple">0</p>
+            </div>
+            <div id="taches">
+              <div id="xflour"></div>
+              <div id="xsugar"></div>
+              <div id="xmilk"></div>
+              <div id="xbutter"></div>
+              <div id="xegg"></div>
+              <div id="xapple"></div>
+            </div>
+          </div>
+          <div id="frontground2"></div>
+
+          <div id="ui">
+            <div id="live1" class="po1 live"></div>
+            <div id="live2" class="po2 live"></div>
+            <div id="live3" class="po3 live"></div>
+          </div>
+          <div id="ui2">
+            <div id="pause"></div>
+            <div id="ui_but_home" class="pulse2 hide"></div>
+            <div>
+              <p><span id="time_left"></span></p>
+            </div>
+          </div>
+          <audio id="bzzz" src="sounds_mp3/bzzz_01.mp3"></audio>
+          <audio id="pressbee" src="sounds_mp3/pressbee_01.mp3"></audio>
+          <audio id="nej" src="sounds_mp3/nej.mp3"></audio>
+          <audio id="caida" src="sounds_mp3/caida.mp3"></audio>
+          <audio id="pop" src="sounds_mp3/pop3.mp3"></audio>
+          <audio id="tictac" src="sounds_mp3/tictac.mp3"></audio>
+          <audio id="super" src="sounds_mp3/ingrediente.mp3"></audio>
+          <audio id="owh" src="sounds_mp3/wrong.mp3"></audio>
+          <audio id="steps" src="sounds_mp3/steps_03.mp3"></audio>
+          <audio id="bgsong" src="sounds_mp3/Late-for-Work.mp3"></audio>
+          <audio
+            id="g-o-lives"
+            src="sounds_mp3/Cracks-in-the-Pavement.mp3"
+          ></audio>
+          <audio id="g-o-time" src="sounds_mp3/Little-Lullaby.mp3"></audio>
+          <audio id="risa" src="sounds_mp3/orale.mp3"></audio>
+          <audio id="l-complete" src="sounds_mp3/Riding-On.mp3"></audio>
+          <audio id="click_buttom" src="sounds_mp3/click.mp3"></audio>
+        </div>
+
+        <div id="title_screen">
+          <div id="title_background"></div>
+          <div id="chef_bear">
+            <div id="chef_bearsprite"></div>
+          </div>
+          <div id="logo"></div>
+          <div id="title_play">
+            <div id="tbuttom_play" class="hide pulse2"></div>
+          </div>
+          <div id="play_bee">
+            <div id="sprite_play"></div>
+            <div id="sprite_beeglases"></div>
+          </div>
+
+          <div id="buttom_square"></div>
+          <div id="title_front"></div>
+        </div>
+
+        <div id="instructions_screen">
+          <div id="instructions">
+            <div id="good_ingredients">
+              <section id="section1">
+                <img
+                  src="assets/buttom_instructions.svg"
+                  alt="instructions sign"
+                  id="hi"
+                />
+                <p id="p1">
+                  The goal of the game is to gather the proper ingredients of
+                  the list, before the time runs out and without clicking the
+                  bees. Once you finish to gather the ingredients from the list
+                  you complete the level.
+                </p>
+                <p id="p2">
+                  You have three lives and you will lose them if you click the
+                  bees.
+                </p>
+                <p id="p3">
+                  In the game are also wrong ingredients, they are not on the
+                  list.
+                </p>
+                <p id="p4">
+                  You have two minutes to complete the list of ingredients. The
+                  forest will get darker as the time is passing, and when you
+                  have 20 seconds left the time will show as a countdown.
+                </p>
+                <div id="p5">
+                  <p class="fontpulse2">:20</p>
+                </div>
+
+                <div id="container_ingrediente">
+                  <h2>Good ingredients:</h2>
+                  <div id="i_good1" class="sprite2 flour scale_i">3</div>
+                  <div id="i_good2" class="sprite2 sugar turn2"></div>
+                  <div id="i_good3" class="sprite2 milk turn2"></div>
+                  <div id="i_good4" class="sprite2 butter scale2_i">Done</div>
+                  <div id="i_good5" class="sprite2 egg turn2"></div>
+                  <div id="i_good6" class="sprite2 apple turn2"></div>
+                </div>
+                <div id="lista">
+                  <div id="info_live1" class="po1 live"></div>
+                  <div id="info_live2" class="po2 live"></div>
+                  <div id="info_live3" class="po3 live"></div>
+                  <div id="icounter">
+                    <p id="icflour">5</p>
+                    <p id="icsugar">8</p>
+                    <p id="icmilk">10</p>
+                    <p id="icbutter">9</p>
+                    <p id="icegg">12</p>
+                    <p id="icapple">15</p>
+                  </div>
+                  <div id="itaches">
+                    <div id="ixflour"></div>
+                    <div id="ixsugar" class="line"></div>
+                    <div id="ixmilk" class="line"></div>
+                    <div id="ixbutter"></div>
+                    <div id="ixegg" class="line"></div>
+                    <div id="ixapple" class="line"></div>
+                  </div>
+                </div>
+                <div id="wrong_ingredients">
+                  <h2>Wrong ingredients:</h2>
+                  <div id="i_wrong1" class="sprite2 bacon turn2"></div>
+                  <div id="i_wrong2" class="sprite2 chocolate turn2"></div>
+                  <div id="i_wrong3" class="sprite2 carrot turn2"></div>
+                  <div id="i_wrong4" class="sprite2 pear turn2"></div>
+                  <div id="i_wrong5" class="sprite2 salt turn2"></div>
+                </div>
+                <div id="bee_ci">
+                  <h2>Bee</h2>
+                  <div id="bee_i" class="falling3"></div>
+                </div>
+
+                <div id="inst_but_play" class="pulse2"></div>
+              </section>
+            </div>
+          </div>
+          <div id="close_buttom" class="pulse2"></div>
+        </div>
+        <div id="game_over">
+          <div id="bybee">
+            <div id="deadbeeRP">
+              <div id="goreplay" class="replay pulse2"></div>
+            </div>
+          </div>
+        </div>
+        <div id="time_over">
+          <div id="bytime">
+            <div id="toreplay" class="replay pulse2"></div>
+          </div>
+        </div>
+
+        <div id="level_complete">
+          <div id="l_complete">
+            <div id="lcreplay" class="replay pulse2"></div>
+          </div>
+        </div>
+        <div id="sound2"></div>
+        <div id="cover2"></div>
+      </div>
+
+      <aside>
+        <h1>About the game</h1>
+
+        <p>
+          This is a game for children, where they have to identify the
+          ingredients on the list to bake an apple pie, collect them when they
+          fall on the screen, but they have to be careful not to kill the bees.
+        </p>
+        <p>
+          Like every child, our main character the little bear Bjørn has to go
+          to sleep when it gets dark, so you have to finish the list before
+          dark.
+        </p>
+
+        <h2>Miguel Gonzalez</h2>
+        <p>
+          I am a multimedia design student at KEA. I come from Mexico and I have
+          been living in Denmark for 7 years
+        </p>
+      </aside>
+    </main>
+    <footer></footer>
+    <script src="js/animation-v2.js"></script>
+  </body>
+</html>
